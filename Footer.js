@@ -1,14 +1,15 @@
-// Footer.js
-import React from 'react';
-import './Footer.css'; // Assuming you have a separate CSS file for styling
+import React, { Component } from 'react';
+import '../Styles/Footer.css';
 
-const Footer = () => {
-  return (
-    <footer className="footer">
-      <p>&copy; 2024 Prem Kumar. All rights reserved.</p>
-     
-    </footer>
-  );
-};
+class footer extends Component {
+    render() {
+        return (
+            <div className='foot'>
+             
+                <p>&copy;All rights reserved. Navya's Fashion Designers</p>
+            </div>
+        );
+    }
+}
 
-export default Footer;
+export default footer;

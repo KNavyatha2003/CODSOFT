@@ -1,31 +1,21 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './Layouts/Header';
-import About from './Components/About'; // Create About component
-import Contact from './Components/Contact'; // Create Contact component
-import Skills from './Components/Skills';
-import Footer from './Layouts/Footer';
-import Education from './Components/Education';
-import Internships from './Components/Internships';
-import Projects from './Components/Project';
-const App = () => {
+import './App.css';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
+import Navbar from './Components/Navbar';
+import  Carousel from './Components/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+function App() {
   return (
-    <Router>
-      <div>
-        <Header />
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path='/education' element={<Education/>}/>
-          <Route path='/skills' element={<Skills/>}/>
-          <Route path='/internships' element={<Internships/>}/>
-          <Route path='/projects' element={<Projects/>}/>
-        </Routes>
-        <Footer/>
-      </div>
-    </Router>
+    <div className='App'>
+     <Header/>
+     <Navbar/>
+     <Carousel />
+
+     <Footer/>
+     </div>
   );
-};
+}
 
 export default App;

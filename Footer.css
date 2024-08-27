@@ -1,14 +1,23 @@
-/* Footer.css */
 .footer {
-  background-color: #80abe2;
-    color: #fff;
+    background-color:black;
+    color:rgb(10, 9, 7);
+    padding: 10px ;
+    background-clip: border-box;
+  }
+p{
+color: aqua;
+  }
+  p1{
+    color:brown;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    
   }
-  .footer p {
-    margin: 5px 0;
+  p2{
+    color: brown;
+    text-align: center;
   }
-  
+  .foot{
+    background-clip:content-box;
+    background-color: black;
+    padding-top: 7%;
+  }
